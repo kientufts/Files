@@ -40,6 +40,11 @@ public class FileExplorer {
 		}
 	}
 
+	public void enter(ExplorerElement e){
+		currentPath = currentPath +"/"+ e.getName();
+		loadAllFilesAndDirectories();
+	}
+
 	public String getCurrentPath() {
 		return currentPath;
 	}

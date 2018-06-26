@@ -7,6 +7,16 @@ public class ExplorerElement {
 	private String name;
 	private long size;
 
+	public String sizeWithFormat(){
+		if(size<1024){
+			return size + " Byte";
+		} else if (size < 1024*1024){
+			return size/1024 + " KB";
+		} else {
+			return size/(1024*1024) + " MB";
+		}
+	}
+
 	public ElementType getType() {
 		return type;
 	}

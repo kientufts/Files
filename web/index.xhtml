@@ -25,8 +25,16 @@
                     <ui:repeat value="#{fileExplorer.elements}" var="e">
                         <tr>
                             <td>#{e.type}</td>
-                            <td>#{e.name}</td>
-                            <td>#{e.size}</td>
+                            <td>
+                                <ui:fragment rendered="#{e.type=='FILE'}">
+                                    #{e.name}
+                                </ui:fragment>
+                                <ui:fragment rendered="#{e.type=='FOLDER'}">
+                                    <h:commandButton class="folder" value="#{e.name}"
+                                                     action="#{fileExplorer.enter(e)}"/>
+                                </ui:fragment>
+                            </td>
+                            <td class="size">#{e.sizeWithFormat()}</td>
                         </tr>
                     </ui:repeat>
                 </tbody>
