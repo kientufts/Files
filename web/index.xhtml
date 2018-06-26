@@ -13,6 +13,7 @@
     <h:body>
         <h:form>
             <h1>Current Path: #{fileExplorer.currentPath}</h1>
+            <h:commandButton image="image/back.png" action="#{fileExplorer.back()}"/>
             <table style="width: 100%">
                 <thead>
                     <tr>
@@ -24,7 +25,11 @@
                 <tbody>
                     <ui:repeat value="#{fileExplorer.elements}" var="e">
                         <tr>
-                            <td>#{e.type}</td>
+                            <td>
+                                <h:graphicImage url="image/file.png" rendered="#{e.type=='FILE'}"/>
+                                <h:graphicImage url="image/folder.png" rendered="#{e.type=='FOLDER'}"/>
+                                #{e.type}
+                            </td>
                             <td>
                                 <ui:fragment rendered="#{e.type=='FILE'}">
                                     #{e.name}

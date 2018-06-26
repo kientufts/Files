@@ -7,17 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b2a25f-3f0e-46c5-b0b1-00cb5369e903" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/web/image/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/folder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/WEB-INF/classes/net/files/bean/ExplorerElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/WEB-INF/classes/net/files/bean/ExplorerElement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/WEB-INF/classes/net/files/controller/FileExplorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/WEB-INF/classes/net/files/controller/FileExplorer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/resources/FileTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Files_war_exploded/resources/FileTable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Files/net/files/bean/ExplorerElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Files/net/files/bean/ExplorerElement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Files/net/files/controller/FileExplorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Files/net/files/controller/FileExplorer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/files/bean/ExplorerElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/files/bean/ExplorerElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/files/controller/FileExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/files/controller/FileExplorer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/FileTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/FileTable.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+            <state relative-caret-position="71">
+              <caret line="15" column="80" selection-start-line="15" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -41,7 +39,7 @@
       <file leaf-file-name="FileTable.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resources/FileTable.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="242">
               <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
             </state>
           </provider>
@@ -50,8 +48,8 @@
       <file leaf-file-name="FileExplorer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/files/controller/FileExplorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+            <state relative-caret-position="242">
+              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,7 +60,7 @@
       <file leaf-file-name="ExplorerElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/files/bean/ExplorerElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="2">
               <caret line="9" column="32" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
@@ -94,9 +92,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/net/files/type/ElementType.java" />
-        <option value="$PROJECT_DIR$/src/net/files/controller/FileExplorer.java" />
         <option value="$PROJECT_DIR$/web/resources/FileTable.css" />
         <option value="$PROJECT_DIR$/src/net/files/bean/ExplorerElement.java" />
+        <option value="$PROJECT_DIR$/test/Main.java" />
+        <option value="$PROJECT_DIR$/src/net/files/controller/FileExplorer.java" />
         <option value="$PROJECT_DIR$/web/index.xhtml" />
       </list>
     </option>
@@ -139,49 +138,6 @@
               <item name="Files" type="b2602c69:ProjectViewProjectNode" />
               <item name="Files" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="type" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Files" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -194,6 +150,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/image" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -332,12 +293,12 @@
       <updated>1529967082037</updated>
       <workItem from="1529967084188" duration="2272000" />
       <workItem from="1530040809565" duration="2856000" />
-      <workItem from="1530050938654" duration="480000" />
+      <workItem from="1530050938654" duration="3395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5608000" />
+    <option name="totallyTimeSpent" value="8523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -363,9 +324,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32859176" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32859176" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -470,22 +431,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/FileTable.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="242">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/files/bean/ExplorerElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="2">
           <caret line="9" column="32" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/files/controller/FileExplorer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        <state relative-caret-position="242">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -494,8 +462,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+        <state relative-caret-position="71">
+          <caret line="15" column="80" selection-start-line="15" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
         </state>
       </provider>
     </entry>

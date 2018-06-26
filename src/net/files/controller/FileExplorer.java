@@ -28,6 +28,7 @@ public class FileExplorer {
 		currentFile = new File(currentPath);
 		elements.clear();
 		for(File f:currentFile.listFiles()){
+			if(f.isHidden()) continue;
 			ExplorerElement ee = new ExplorerElement();
 			if(f.isDirectory()){
 				ee.setType(ElementType.FOLDER);
@@ -42,6 +43,11 @@ public class FileExplorer {
 
 	public void enter(ExplorerElement e){
 		currentPath = currentPath +"/"+ e.getName();
+		loadAllFilesAndDirectories();
+	}
+
+	public void back(){
+		currentPath = currentPath.substring(0, currentPath.lastIndexOf("/"));
 		loadAllFilesAndDirectories();
 	}
 
