@@ -6,10 +6,10 @@ import net.files.type.ElementType;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
 import javax.servlet.http.Part;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,6 +70,30 @@ public class FileExplorer {
 			}
 			fileOutputStream.close();
 			loadAllFilesAndDirectories();
+		} catch (Exception ex){
+			ex.printStackTrace(System.out);
+		}
+	}
+
+	public void download(ExplorerElement e){
+		try{
+			FacesContext context = FacesContext.getCurrentInstance();
+			ExternalContext externalContext = context.getExternalContext();
+
+			externalContext.responseReset();
+			externalContext.setResponseHeader("Content-Disposition", "attachment;filename=\""+e.getName()+"\"");
+
+			File target = new File(currentPath+"/"+e.getName());
+			FileInputStream inputStream = new FileInputStream(target);
+			OutputStream outputStream = externalContext.getResponseOutputStream();
+
+			byte[] buffer = new byte[1024];
+			int length;
+			while ((length=inputStream.read(buffer))!=-1){
+				outputStream.write(buffer,0,length);
+			}
+			inputStream.close();
+			context.responseComplete();
 		} catch (Exception ex){
 			ex.printStackTrace(System.out);
 		}

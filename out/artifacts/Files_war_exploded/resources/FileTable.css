@@ -35,7 +35,7 @@ input[type='file']{
 }
 
 .upload{
-    background: url('/image/upload.png');
+    background-image: url("/image/upload.png");
     width: 24px;
     height: 24px;
     display: inline-block;

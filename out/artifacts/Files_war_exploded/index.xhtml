@@ -24,6 +24,7 @@
                     <tr>
                         <th>Type</th>
                         <th>Name</th>
+                        <th>Download</th>
                         <th>Size</th>
                     </tr>
                 </thead>
@@ -42,6 +43,11 @@
                                 <ui:fragment rendered="#{e.type=='FOLDER'}">
                                     <h:commandButton class="folder" value="#{e.name}"
                                                      action="#{fileExplorer.enter(e)}"/>
+                                </ui:fragment>
+                            </td>
+                            <td>
+                                <ui:fragment rendered="#{e.type=='FILE'}">
+                                    <h:commandButton image="image/download.png" action="#{fileExplorer.download(e)}"/>
                                 </ui:fragment>
                             </td>
                             <td class="size">#{e.sizeWithFormat()}</td>
