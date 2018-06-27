@@ -11,9 +11,14 @@
         <h:outputStylesheet name="FileTable.css"/>
     </h:head>
     <h:body>
-        <h:form>
+        <h:form enctype="multipart/form-data">
             <h1>Current Path: #{fileExplorer.currentPath}</h1>
             <h:commandButton image="image/back.png" action="#{fileExplorer.back()}"/>
+            <span class="upload">
+                <h:inputFile value="#{fileExplorer.uploadFile}">
+                    <f:ajax listener="#{fileExplorer.upload()}" event="change" execute="@this" render="@form"/>
+                </h:inputFile>
+            </span>
             <table style="width: 100%">
                 <thead>
                     <tr>

@@ -6,7 +6,10 @@ import net.files.type.ElementType;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.servlet.http.Part;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +19,7 @@ public class FileExplorer {
 	private String currentPath;
 	private List<ExplorerElement> elements;
 	private File currentFile;
+	private Part uploadFile;
 
 	@PostConstruct
 	public void init(){
@@ -51,6 +55,26 @@ public class FileExplorer {
 		loadAllFilesAndDirectories();
 	}
 
+	public void upload(){
+		try {
+			File copyFile = new File(currentPath + "/" + uploadFile.getSubmittedFileName());
+			copyFile.createNewFile();
+
+			InputStream inputStream = uploadFile.getInputStream();
+			FileOutputStream fileOutputStream = new FileOutputStream(copyFile);
+
+			byte[] buffer = new byte[1024];
+			int length;
+			while ((length=inputStream.read(buffer))!=-1){
+				fileOutputStream.write(buffer, 0, length);
+			}
+			fileOutputStream.close();
+			loadAllFilesAndDirectories();
+		} catch (Exception ex){
+			ex.printStackTrace(System.out);
+		}
+	}
+
 	public String getCurrentPath() {
 		return currentPath;
 	}
@@ -65,5 +89,13 @@ public class FileExplorer {
 
 	public void setElements(List<ExplorerElement> elements) {
 		this.elements = elements;
+	}
+
+	public Part getUploadFile() {
+		return uploadFile;
+	}
+
+	public void setUploadFile(Part uploadFile) {
+		this.uploadFile = uploadFile;
 	}
 }
